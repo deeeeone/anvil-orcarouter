@@ -4,11 +4,11 @@ An [Anvil](https://github.com/deeeeone/Anvil) provider plugin for [OrcaRouter](h
 
 ## Requirements
 
-- An OrcaRouter API key (starts with `sk-orca-`).
+- An OrcaRouter API key (keys issued by the [dashboard](https://www.orcarouter.ai) start with `sk-orca-`, per [OrcaRouter's docs](https://docs.orcarouter.ai/getting-started/get-api-key)).
 
 ## What it sends where
 
-- Requests go to `https://api.orcarouter.ai/v1/chat/completions` and `/models` with your API key sent as `Authorization: Bearer <key>`. Nothing else is contacted; the key stays in the macOS Keychain.
+- Requests go to `https://api.orcarouter.ai/v1/chat/completions` and `/models` with your API key sent as `Authorization: Bearer <key>` (the bearer scheme documented by OrcaRouter). The key is entered in Anvil's settings.
 
 ## Install
 
@@ -18,8 +18,8 @@ Or locally: clone or download this folder, then **Add provider → From a folder
 
 ## Models
 
-The lineup of `-free` models changes often; the file ships the current free list. Anvil also lists the live catalog from `/models`, including the virtual `orcarouter/free` id that routes to whichever free model is available.
+The file ships the current free list (confirmed live via `GET /models`); OrcaRouter's lineup rotates, so edit `anvil-provider.json` if a free model disappears. OrcaRouter also exposes the virtual `orcarouter/free` id that routes to whatever free model is available.
 
 ## Notes on the free tier
 
-Unpaid accounts are limited to roughly 10 requests/min and 50 requests/day; a large single prompt may be rejected with a prompt-cap error rather than a normal rate-limit error. Expect occasional 4xx responses on the free package.
+OrcaRouter applies lower rate and daily limits to free-tier usage and may reject oversized single prompts; expect occasional 4xx responses on the free package. Check the [OrcaRouter docs](https://docs.orcarouter.ai) for current limits.

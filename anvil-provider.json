@@ -14,11 +14,11 @@
     "keyURL": "https://www.orcarouter.ai"
   },
   "models": [
-    { "id": "deepseek/deepseek-v4-flash-free", "context": 128000, "input": 0, "output": 0 },
-    { "id": "deepseek/deepseek-v4.1-flash-free", "context": 128000, "input": 0, "output": 0 },
-    { "id": "z-ai/glm-5.3-flash-free", "context": 128000, "input": 0, "output": 0 },
-    { "id": "tencent/hy3-free", "context": 128000, "input": 0, "output": 0 },
-    { "id": "tencent/hy4-preview-free", "context": 128000, "input": 0, "output": 0 },
-    { "id": "orcarouter/free", "context": 128000, "input": 0, "output": 0 }
+    { "id": "orcarouter/free", "context": 1000000, "input": 0, "output": 0 },
+    { "id": "deepseek/deepseek-v4-flash-free", "context": 1000000, "input": 0, "output": 0 },
+    { "id": "deepseek/deepseek-v4.1-flash-free", "context": 1000000, "input": 0, "output": 0 },
+    { "id": "z-ai/glm-5.3-flash-free", "context": 1000000, "input": 0, "output": 0 },
+    { "id": "tencent/hy3-free", "context": 256000, "input": 0, "output": 0 },
+    { "id": "tencent/hy4-preview-free", "context": 1000000, "input": 0, "output": 0 }
   ]
 }
