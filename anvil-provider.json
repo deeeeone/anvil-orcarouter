@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/deeeeone/Anvil/main/docs/anvil-provider.schema.json",
+  "spec": 1,
+  "id": "orca",
+  "name": "OrcaRouter",
+  "description": "OrcaRouter model router: free-tier models on an OpenAI-compatible API.",
+  "homepage": "https://www.orcarouter.ai",
+  "symbol": "water.waves",
+  "type": "openai",
+  "baseURL": "https://api.orcarouter.ai/v1",
+  "auth": {
+    "type": "apiKey",
+    "label": "OrcaRouter API key (sk-orca-...)",
+    "keyURL": "https://www.orcarouter.ai"
+  },
+  "models": [
+    { "id": "deepseek/deepseek-v4-flash-free", "context": 128000, "input": 0, "output": 0 },
+    { "id": "deepseek/deepseek-v4.1-flash-free", "context": 128000, "input": 0, "output": 0 },
+    { "id": "z-ai/glm-5.3-flash-free", "context": 128000, "input": 0, "output": 0 },
+    { "id": "tencent/hy3-free", "context": 128000, "input": 0, "output": 0 },
+    { "id": "tencent/hy4-preview-free", "context": 128000, "input": 0, "output": 0 },
+    { "id": "orcarouter/free", "context": 128000, "input": 0, "output": 0 }
+  ]
+}
